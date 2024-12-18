@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link href="book.css" rel="stylesheet">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <div class="grid-container">
+        <main>
+
+            <div class="header">
+                <a href="index.html">
+                    <img src="logo.png">
+                </a>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="book.html">Book</a></li>
+                    <li><a href="crochet.html">Crochet</a></li>
+                </ul>
+            </nav>
+<h1>Books</h1>
+            <div class="book-container">
+                <div class="book-item">
+                    <img src="exile.webp" alt="Exile Book Cover">
+                    <h3>Exile</h3>
+                    <h5>Shannon Messenger</h5>
+                    <p>Sophie Foster thought she was safe. Settled into her home at Havenfield...</p>
+                    <button class="read-more-btn" onclick='openBookDetails("Keeper of the Lost Cities - Exile", "exile.webp", "Sophie Foster thought she was safe. Settled into her home at Havenfield, surrounded by friends, and using her unique telepathic abilities to train Silveny--the first female alicorn ever seen in the Lost Cities--her life finally seems to be coming together. But Sophies kidnappers are still out there. And when Sophie discovers new messages and clues from the mysterious Black Swan group, she’s forced to take a terrifying risk—one that puts everyone in incredible danger. As long buried secrets rise to the surface, it’s once again up to Sophie to uncover hidden memories—before someone close to her is lost forever. In this second book in the Keeper of the Lost Cities series, Sophie must journey to the darkest corners of her luminous world in a sequel that will leave you breathless for more.")'>Read More</button>
+                </div>
+
+                <div class="book-item">
+                    <img src="neverseen.jpeg" alt="Neverseen Book Cover">
+                    <h3>Neverseen</h3>
+                    <h5>Shannon Messenger</h5>
+                    <p>Sophie Foster is on the run—but at least she's not alone...</p>
+                    <button class="read-more-btn" onclick="openBookDetails('Book 2 Neverseen', 'neverseen.jpeg', 'Sophie Foster is on the run—but at least shes not alone.Her closest friends from the Lost Cities have gone with her to join the Black Swan. They still have doubts about the shadowy organization, but the only way to find answers is to start working with them. And as they settle into their new lives, they uncover secrets far bigger than anything they’d imagined.But their enemies are far from done, and unleash a terrifying plague that threatens the safety of an entire species. Sophie and her friends fight with everything they have—with new allies joining them—but every choice has consequences. And trusting the wrong person could prove deadly. In this game-changing fourth book in the Keeper of the Lost Cities series, Sophie must question everything to find a truth that will either save her world—or shatter it.')">Read More</button>
+                </div>
+
+                <div class="book-item">
+                    <img src="stellarlune.webp" alt="Stellarlune Book Cover">
+                    <h3>Stellarlune</h3>
+                    <h5>Shannon Messenger</h5>
+                    <p>Sophie Foster changed the game...</p>
+                    <button class="read-more-btn" onclick="openBookDetails('Book 3 Stellarlune', 'stellarlune.webp', 'Sophie Foster changed the game.Now she’s facing impossible choices: When to act.When to trust.When to let go.Her friends are divided and scattered, and the Black Swan wants Sophie to focus on their projects. But her instincts are leading her somewhere else.Stellarlune—and the mysterious Elysian—might be the key to everything. But finding truth in the Lost Cities always requires sacrifice. And as the Neverseen’s plans sharpen into terrifying focus, it appears that everyone has miscalculated. The Lost Cities’ greatest lie could destroy everything. And in the battle that follows, only one thing is certain: nothing will ever be the same.')">Read More</button>
+                </div>
+
+                <div class="book-item">
+                    <img src="daddy-long-legs.jpeg" alt="Daddy Long Legs Book Cover">
+                    <h3>Daddy Long Legs</h3>
+                    <h5>Jean Webster</h5>
+                    <p>Daddy Long-Legs is a 1912 epistolary novel by the American...</p>
+                    <button class="read-more-btn" onclick="openBookDetails('Daddy Long Legs', 'daddy-long-legs.jpeg', 'Daddy Long-Legs is a 1912 epistolary novel by the American writer Jean Webster. It follows the protagonist, a young girl named Jerusha Judy Abbott, through her college years. She writes the letters to her benefactor, a rich man whom she has never seen.')">Read More</button>
+                </div>
+
+                <div class="book-item">
+                    <img src="chronicles_narnia.jpeg" alt="Chronicles of Narnia Book Cover">
+                    <h3>Chronicles of Narnia</h3>
+                    <h5>C.S. Lewis</h5>
+                    <p>Journeys to the end of the world, fantastic creatures, and epic...</p>
+                    <button class="read-more-btn" onclick="openBookDetails('Chronicles of narnia series', 'chronicles_narnia.jpeg', 'Journeys to the end of the world, fantastic creatures, and epic battles between good and evil—what more could any reader ask for in one book? The book that has it all is The Lion, the Witch and the Wardrobe, written in 1949 by Clive Staples Lewis. But Lewis did not stop there. Six more books followed, and together they became known as The Chronicles of Narnia. For the past fifty years, The Chronicles of Narnia have transcended the fantasy genre to become part of the canon of classic literature. Each of the seven books is a masterpiece, drawing the reader into a land where magic meets reality, and the result is a fictional world whose scope has fascinated generations. This edition presents all seven books—unabridged—in one impressive volume. The books are presented here in chronlogical order, each chapter graced with an illustration by the original artist, Pauline Baynes. Deceptively simple and direct, The Chronicles of Narnia continue to captivate fans with adventures, characters, and truths that speak to readers of all ages, even fifty years after they were first published.')">Read More</button>
+                </div>
+
+                <div class="book-item">
+                    <img src="false-prince.jpeg" alt="The False Prince Book Cover">
+                    <h3>The False Prince</h3>
+                    <h5>Jennifer Nielsen</h5>
+                    <p>In a discontent kingdom, civil war is brewing. To unify the divided...</p>
+                    <button class="read-more-btn" onclick="openBookDetails('The False Prince', 'false-prince.jpeg', 'In a discontent kingdom, civil war is brewing. To unify the divided people, Conner, a nobleman of the court, devises a cunning plan to find an impersonator of the kings long-lost son and install him as a puppet prince. Four orphans are recruited to compete for the role, including a defiant boy named Sage. Sage knows that Conners motives are more than questionable, yet his life balances on a swords point—he must be chosen to play the prince or he will certainly be killed. But Sages rivals have their own agendas as well. As Sage moves from a rundown orphanage to Conners sumptuous palace, layer upon layer of treachery and deceit unfold, until finally, a truth is revealed that, in the end, may very well prove more dangerous than all of the lies taken together.')">Read More</button>
+                </div>
+
+    
+            </div>
+            
+        </main>
+
+        <div id="bookModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="modalTitle">Book Title</h2>
+                <img id="modalImage" src="" alt="Book Image">
+                <p id="modalDescription">Description of the book.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p><strong>Lauren Smith 2024</strong></p>
+    </footer>
+</body>
+</html>
+
+
+
