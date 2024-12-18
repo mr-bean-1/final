@@ -1,17 +1,18 @@
-<h1>Videos</h1>
-            <p>These are the videos I use:</p>
+function openBookDetails(title, image, description) {
+    document.getElementById('modalTitle').textContent = title;
+    document.getElementById('modalImage').src = image;
+    document.getElementById('modalDescription').textContent = description;
+  
+    document.getElementById('bookModal').style.display = 'block';
+}
 
-            <!-- Video Player -->
-            <video width="auto" height="300px" controls>
-                <source src="videos/can_you_feel_the_love_tonight.mp4" type="video/mp4">
-                <source src="videos/sonata_in_g.mp4" type="video/mp4">
-                <source src="videos/silent_night.mp4" type="video/mp4">
-                <source src="videos/deck_the_halls.mp4" type="video/mp4">
+function closeModal() {
+    document.getElementById('bookModal').style.display = 'none';
+}
 
-                <!-- Fallback content -->
-                Your browser does not support the video tag.
-            </video>
-
-            <h1>Sheet Music</h1>
-            <p>Here is music that I use</p>
-        </main>
+window.onclick = function(event) {
+    const modal = document.getElementById('bookModal');
+    if (event.target === modal) {
+        closeModal();
+    }
+}
